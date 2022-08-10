@@ -1,0 +1,42 @@
+.form {
+    background-color: white;
+    border-radius: 5px;
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-body {
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.form-body>* {
+    padding: 5px;
+}
+
+.form_label {
+    width: 40%;
+}
+
+.form_input {
+    width: 40%;
+}
+
+.footer {
+    text-align: center;
+}
+
+/* Automatic Serial Number Row */
+.css-serial {
+    counter-reset: serial-number;
+    /* Set the serial number counter to 0 */
+}
+
+.css-serial td:first-child:before {
+    counter-increment: serial-number;
+    /* Increment the serial number counter */
+    content: counter(serial-number);
+    /* Display the counter */
+}
